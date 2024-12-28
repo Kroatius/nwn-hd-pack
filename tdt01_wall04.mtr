@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tdt01_wall04_d
+texture1 tdt01_wall04_n
+texture2 tdt01_wall04_s
+texture3 tdt01_wall04_r
+texture4 tdt01_wall04_h
+texture5 null

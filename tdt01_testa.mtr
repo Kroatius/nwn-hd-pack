@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tdt01_testa_d
+texture1 tdt01_testa_n
+texture2 black
+texture3 tdt01_testa_r
+texture4 tdt01_testa_h
+texture5 null
