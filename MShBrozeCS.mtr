@@ -1,0 +1,8 @@
+// Renderhint
+renderhint NormalAndSpecMapped
+
+// Textures
+texture0 MShBrozeCS
+texture1 MShSwirlsOrn-N
+texture2 MShBrozeCS-S
+texture3 MShBrozeCS-R

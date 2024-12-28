@@ -1,0 +1,8 @@
+// Renderhint
+renderhint NormalAndSpecMapped
+
+// Textures
+texture0 MShSteel
+texture1 null
+texture2 MShSteelDirty-S
+texture3 MShSteelDirty-R

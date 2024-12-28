@@ -1,0 +1,8 @@
+// Renderhint
+renderhint NormalAndSpecMapped
+
+// Textures
+texture0 MShCLeather
+texture1 MShCLeather-N
+texture2 MShCLeather-S
+texture3 MShCLeather-R

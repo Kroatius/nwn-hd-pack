@@ -1,0 +1,8 @@
+// Renderhint
+renderhint NormalAndSpecMapped
+
+// Textures
+texture0 MShWoodCherry
+texture1 null
+texture2 MShWoodCherry-S
+texture3 MShWoodCherry-R

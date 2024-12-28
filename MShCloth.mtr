@@ -1,0 +1,9 @@
+// Renderhint
+renderhint NormalAndSpecMapped
+
+// Textures
+texture0 MShCloth
+texture1 null
+texture2 MShCloth-S
+texture3 MShCloth-R
+texture4 MShCloth

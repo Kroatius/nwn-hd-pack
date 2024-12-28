@@ -1,0 +1,5 @@
+// Renderhint
+renderhint normalandspecmapped
+
+// Textures
+texture0 soup

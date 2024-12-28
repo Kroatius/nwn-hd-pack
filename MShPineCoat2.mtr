@@ -1,0 +1,8 @@
+// Renderhint
+renderhint NormalAndSpecMapped
+
+// Textures
+texture0 MShPineCoat2
+texture1 MShPineCoat-N
+texture2 MShPineCoat-S
+texture3 MShPineCoat-R

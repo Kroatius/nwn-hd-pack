@@ -1,0 +1,8 @@
+// Renderhint
+renderhint NormalAndSpecMapped
+
+// Textures
+texture0 MShSteel
+texture1 MShSteelBand-N
+texture2 MShSteelBand-S
+texture3 MShSteelBand-R

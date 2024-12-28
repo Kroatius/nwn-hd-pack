@@ -1,0 +1,8 @@
+// Renderhint
+renderhint NormalAndSpecMapped
+
+// Textures
+texture0 MShNailedWood
+texture1 null
+texture2 MShNailedWood-S
+texture3 MShNailedWood-R

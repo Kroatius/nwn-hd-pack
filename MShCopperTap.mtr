@@ -1,0 +1,8 @@
+// Renderhint
+renderhint NormalAndSpecMapped
+
+// Textures
+texture0 MShCopperTap
+texture1 MShCopperTap-N
+texture2 MShCopper-S
+texture3 MShCopper-R

@@ -1,0 +1,10 @@
+ 
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 plc_flag04
+texture1 plc_flag04_n
+texture2 plc_flag04_s
+texture3 null
+texture4 null
+texture5 null
