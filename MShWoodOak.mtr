@@ -2,6 +2,6 @@
 renderhint NormalAndSpecMapped
 
 // Textures
-texture0 MShWoodOak
-texture1 MShWoodOak-N
-texture2 MShWoodOak-S
+texture0 mshwoodoak_d
+texture1 mshwoodoak_n
+texture2 mshwoodoak_s

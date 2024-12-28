@@ -2,7 +2,7 @@
 renderhint NormalAndSpecMapped
 
 // Textures
-texture0 MShSteel
-texture1 MShSteelBand-N
-texture2 MShSteelBand-S
-texture3 MShSteelBand-R
+texture0 mshsteel_d
+texture1 mshsteelband_n
+texture2 mshsteelband_s
+texture3 mshsteelband_r

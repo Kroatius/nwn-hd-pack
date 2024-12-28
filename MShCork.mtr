@@ -1,5 +1,5 @@
 // Textures
-texture0 MShCork
+texture0 mshcork_d
 texture1 null
 texture2 null
-texture3 MShCork-R
+texture3 mshcork_r

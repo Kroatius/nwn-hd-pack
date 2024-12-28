@@ -2,7 +2,7 @@
 renderhint NormalAndSpecMapped
 
 // Textures
-texture0 MShNailedWood
-texture1 null
-texture2 MShNailedWood-S
-texture3 MShNailedWood-R
+texture0 mshnailedwood_d
+texture1 mshnailedwood_n
+texture2 mshnailedwood_s
+texture3 mshnailedwood_r

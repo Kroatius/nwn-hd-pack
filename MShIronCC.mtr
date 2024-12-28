@@ -2,7 +2,7 @@
 renderhint NormalAndSpecMapped
 
 // Textures
-texture0 MShIronCC
-texture1 MShClamps-N
-texture2 MShIronCC-S
-texture3 MShIronCC-R
+texture0 mshironcc_d
+texture1 mshclamps_n
+texture2 mshironcc_s
+texture3 mshironcc_r

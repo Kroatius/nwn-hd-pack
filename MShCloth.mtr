@@ -2,8 +2,8 @@
 renderhint NormalAndSpecMapped
 
 // Textures
-texture0 MShCloth
+texture0 mshcloth_d
 texture1 null
-texture2 MShCloth-S
-texture3 MShCloth-R
-texture4 MShCloth
+texture2 mshcloth_s
+texture3 mshcloth_r
+texture4 mshcloth_d

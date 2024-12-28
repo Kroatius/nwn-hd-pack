@@ -2,7 +2,7 @@
 renderhint NormalAndSpecMapped
 
 // Textures
-texture0 MShWoodCherry
+texture0 mshwoodcherry_d
 texture1 null
-texture2 MShWoodCherry-S
-texture3 MShWoodCherry-R
+texture2 mshwoodcherry_s
+texture3 mshwoodcherry_r

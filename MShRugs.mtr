@@ -1,5 +1,6 @@
-// Renderhint
-renderhint NormalAndSpecMapped
-
 // Textures
-texture0 MShRugs
+texture0 mshrugs_d
+texture1 null
+texture2 null
+texture3 null
+texture4 mshrugs_b

@@ -2,7 +2,7 @@
 renderhint NormalAndSpecMapped
 
 // Textures
-texture0 MShSteel
+texture0 mshsteel_d
 texture1 null
-texture2 MShSteelDirty-S
-texture3 MShSteelDirty-R
+texture2 mshsteeldirty_s
+texture3 mshsteeldirty_r
