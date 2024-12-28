@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tcn01_spear_d
+texture1 tcn01_spear_n
+texture2 tcn01_spear_s
+texture3 null
+texture4 tcn01_spear_h
+texture5 null

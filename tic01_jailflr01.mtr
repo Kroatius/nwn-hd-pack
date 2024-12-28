@@ -1,9 +1,0 @@
-renderhint NormalAndSpecMapped
- 
-// Textures 
- texture0 tic01_jail_d
- texture1 tic01_jail_n
- texture2 tic01_jail_s
- texture3 null
- texture4 tic01_jail_h
- texture5 null

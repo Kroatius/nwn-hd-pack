@@ -1,8 +1,0 @@
-proceduretype cycle
-
-downsamplefactor 0
-
-numx 3
-numy 2
-fps 24
-speed 1.0

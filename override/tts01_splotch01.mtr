@@ -1,0 +1,14 @@
+ 
+    
+customshadervs fslit_nm    
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tts01_splotch01
+texture1 tts01_splotch1_n
+texture2 null
+texture3 null
+texture4 null
+texture5 null
+
+

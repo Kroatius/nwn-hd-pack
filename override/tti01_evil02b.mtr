@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tti01_evil02_d
+texture1 tti01_evil02_n
+texture2 tti01_evil02_s
+texture3 tti01_evil02_r
+texture4 tti01_evil02_h
+texture5 null

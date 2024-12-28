@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttd01_stcco_w0_d
+texture1 ttd01_stcco_w0_n
+texture2 black
+texture3 ttd01_stcco_w0_r
+texture4 ttd01_stcco_w0_h
+texture5 null

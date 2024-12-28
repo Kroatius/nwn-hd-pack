@@ -1,0 +1,10 @@
+ 
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 dr_trans
+texture1 dr_trans_n
+texture2 dr_trans_s
+texture3 null
+texture4 null
+texture5 null

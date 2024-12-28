@@ -1,0 +1,237 @@
+//=============================================================================
+//
+// SHD_ROOFKN_VS.SHD => from vslit_nm.shd.  
+// Call custom shader instead of ApplyStandardShader().
+// For use with roofs so the show if camera is low enough; show in underground but not above ground. No keyholing.
+// Last reviewed February 15 2024.   
+//
+//=============================================================================
+
+#define SHADER_TYPE 1
+
+#define FOG 1
+#define KEYHOLING 0
+
+#define NORMAL_MAP 1
+#define LIGHTING 1
+
+#include "inc_standard"
+
+uniform int iRoofInterior;      // Defines if a roof element is always raised from beneath the ground regardless of camera height when area is flagged Interior; good for specific features
+uniform float fRoofOffsetZ;     // Defines how high to raise a hidden roof from beneath the ground so it shows; this is tileset specific  
+uniform float fRoofCameraClipZ; // Defines how high the camera is when a hidden roof is moved back beneath the ground and stays hidden; this is tileset specific  
+
+uniform mat4 m_m;
+out float fVertexHeight;
+
+// From ovr\"inc_transform" => TransformMainCoordinates() 
+void TransformMainCoordinatesOverride()
+{
+	vec4 vLocalPosition = vec4(0.0, 0.0, 0.0, 0.0);
+
+	#if NORMAL_MAP == 1
+		vVertexTangent = vec3(0.0, 0.0, 0.0);
+	#endif
+	#if VERTEX_NORMAL == 1
+		vVertexNormal = vec3(0.0, 0.0, 0.0);
+	#endif
+	if(skinmesh == 1)
+	{
+		int index = 0;
+		
+		if(vWeight.x > 0.0)
+		{
+			index = int(vIndex.x);
+			vLocalPosition = SkinmeshTransformPosition(vPos, index) * vWeight.x;
+			#if NORMAL_MAP == 1
+				vVertexTangent = SkinmeshTransformOrientation(vTangent, index) * vWeight.x;
+			#endif
+			#if VERTEX_NORMAL == 1
+				vVertexNormal = SkinmeshTransformOrientation(vNormal, index) * vWeight.x;
+			#endif
+		}
+		if(vWeight.y > 0.0)
+		{
+			index = int(vIndex.y);
+			vLocalPosition += SkinmeshTransformPosition(vPos, index) * vWeight.y;
+			#if NORMAL_MAP == 1
+				vVertexTangent = SkinmeshTransformOrientation(vTangent, index) * vWeight.y + vVertexTangent;
+			#endif
+			#if VERTEX_NORMAL == 1
+				vVertexNormal = SkinmeshTransformOrientation(vNormal, index) * vWeight.y + vVertexNormal;
+			#endif
+		}
+		if(vWeight.z > 0.0)
+		{
+			index = int(vIndex.z);
+			vLocalPosition += SkinmeshTransformPosition(vPos, index) * vWeight.z;
+			#if NORMAL_MAP == 1
+				vVertexTangent = SkinmeshTransformOrientation(vTangent, index) * vWeight.z + vVertexTangent;
+			#endif
+			#if VERTEX_NORMAL == 1
+				vVertexNormal = SkinmeshTransformOrientation(vNormal, index) * vWeight.z + vVertexNormal;
+			#endif
+		}
+		if(vWeight.w > 0.0)
+		{
+			index = int(vIndex.w);
+			vLocalPosition += SkinmeshTransformPosition(vPos, index) * vWeight.w;
+			#if NORMAL_MAP == 1
+				vVertexTangent = SkinmeshTransformOrientation(vTangent, index) * vWeight.w + vVertexTangent;
+			#endif
+			#if VERTEX_NORMAL == 1
+				vVertexNormal = SkinmeshTransformOrientation(vNormal, index) * vWeight.w + vVertexNormal;
+			#endif
+		}
+	}
+	else
+	{
+		vLocalPosition = vPos;
+		#if VERTEX_NORMAL == 1
+			vVertexNormal = vNormal;
+		#endif
+		#if NORMAL_MAP == 1
+			vVertexTangent = vTangent;
+		#endif
+	}
+     
+	/////////////////////////////////////////////
+	// BEGIN INSERT REPOSITION FOR ROOF  
+	/////////////////////////////////////////////
+ 
+    if (((cameraPosition.z < fRoofCameraClipZ) || (iRoofInterior == 1)) && ( (areaFlags == 1) || (areaFlags == 3) || (areaFlags == 5) || (areaFlags == 7)))
+	{
+	  vLocalPosition.z += fRoofOffsetZ;	// move the object up to the ceiling
+	}
+	else
+	{
+	  vLocalPosition.z -= 500.0;  // move the object way under so it is not visible for pits/water/etc
+	}
+	
+    // Pass the world position of vertex to fragment shader 
+    vec4 vWorldPosition = m_m * vPos;
+    fVertexHeight = vWorldPosition.z;
+	
+	/////////////////////////////////////////////
+	// END INSERT REPOSITION FOR ROOF 
+	/////////////////////////////////////////////
+	
+	vec4 vPosProj;
+
+	#if POSITION_VIEW == 1
+		vPosView = (m_mv * vLocalPosition).xyz;
+
+		vPosProj = m_proj * vec4(vPosView.x, vPosView.y, vPosView.z, 1.0);
+
+		#if NORMAL_MAP == 1
+			// Rotate the tangent around the normal.
+			// Gram-Schmidt orthogonalization.
+			//vVertexTangent = vVertexTangent - vVertexNormal * fHandedness * (dot(vVertexTangent, vVertexNormal));
+			// The two fits nicely as:
+			//vVertexTangent = vVertexTangent * m_texture[0][0] - m_texture[0][0] * dot(vVertexNormal, vVertexTangent) * vVertexNormal + m_texture[1][0] * cross(vVertexNormal, vVertexTangent);
+			vVertexTangent = mat3(m_mv) * vVertexTangent;
+		#endif
+
+		#if VERTEX_NORMAL == 1
+			vVertexNormal = mat3(m_mv) * vVertexNormal;
+			//if(vVertexNormal.z < 0.0) vVertexNormal = -vVertexNormal;
+		#endif
+	
+	#else 
+	
+		vPosProj = m_mvp * vLocalPosition;
+	#endif
+
+	gl_Position = vPosProj;
+	
+	#if POSITION_WORLD == 1
+		vPosWorld = (m_vp_inv * vPosProj).xyz;
+	#endif 
+
+
+	#if NO_TEXTURE != 1
+
+		#if NORMAL_MAP == 1
+			fTextureHandedness = fHandedness;
+		#endif
+		
+
+		#if NO_TEXTURE_COORDS != 1
+			vVertexTexCoords = mat2(m_texture) * vTcIn.xy;
+		#else
+			vVertexTexCoords = vec2(0.5, 0.5);
+		#endif
+
+	#endif
+}
+
+// From ovr\"inc_standard" => ApplyStandardShader() 
+void ApplyStandardShaderOverride()
+{
+	TransformMainCoordinatesOverride();
+
+	#if KEYHOLING == 1
+	SetupKeyholeFactors();
+	#endif 
+	// Used for both specular light and environment map.
+	#if ((ENVIRONMENT_MAP == 1 || SPECULAR_LIGHT == 1) && FRAGMENT_NORMAL != 1)
+		SetupViewToSurfaceNormal();
+	#endif
+
+	#if LIGHTING == 1
+
+		SetupLights();
+
+		// Sets initial vertex color. For vertex lighting, this is done as part of the ComputeLighting call instead.
+		#if FRAGMENT_LIGHTING == 1
+			// Nothing for now.
+		#elif FRAGMENT_NORMAL == 1
+
+			if(staticLighting == 1)
+			{
+				VertexStaticLighting = ApplyColorSpace(vColor.rgb);
+			}
+			else
+			{
+				VertexStaticLighting = COLOR_BLACK.rgb;
+			}	
+			
+		#else
+
+			VertexColor = COLOR_WHITE;
+			#if SPECULAR_LIGHT == 1
+				SetupSpecularity(materialFrontDiffuse.rgb);
+			#endif
+			ComputeLighting(VertexColor, vVertexNormal);
+			
+		#endif
+
+	#elif VERTEX_COLOR == 1
+	
+		VertexColor *= ApplyColorSpace(vColor);
+
+	#endif
+
+	#if (ENVIRONMENT_MAP == 1 || SPECULAR_LIGHT == 1) && FRAGMENT_NORMAL != 1
+		if(envMapCube == 1)
+		{
+			vVertexTexCoordsEnvironmentCube = CalculateEnvironmentTexCoordsCube(vVertexNormal);
+			vVertexTexCoordsEnvironment = vec2(0.0, 0.0);
+		}
+		else
+		{
+			vVertexTexCoordsEnvironment = CalculateEnvironmentTexCoords(vVertexNormal);
+			vVertexTexCoordsEnvironmentCube = vec3(0.0, 0.0, 0.0);
+		}
+	#endif
+
+	#if FOG == 1
+		SetupFog();
+	#endif
+}
+
+void main ()
+{
+	ApplyStandardShaderOverride();
+	
+}

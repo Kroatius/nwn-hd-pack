@@ -1,0 +1,10 @@
+ 
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 null
+texture1 plc_fungus01_n
+texture2 plc_fungus01_s
+texture3 null
+texture4 null
+texture5 plc_fungus01_i

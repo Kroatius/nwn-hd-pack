@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tcn01_cb102b_d
+texture1 tcn01_cb102b_n
+texture2 black
+texture3 null
+texture4 tcn01_cb102b_h
+texture5 null

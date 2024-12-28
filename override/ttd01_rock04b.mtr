@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttd01_rock04b_d
+texture1 ttd01_rock04_n
+texture2 black
+texture3 ttd01_rock04_r
+texture4 ttd01_rock04_h
+texture5 null

@@ -1,0 +1,10 @@
+ 
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 pdag_clayi
+texture1 pdag_clayi_n
+texture2 pdag_clayi_s
+texture3 null
+texture4 null
+texture5 null

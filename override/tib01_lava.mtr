@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tib01_lava_i
+texture1 tib01_lava_n
+texture2 black
+texture3 tib01_lava_r
+texture4 tib01_lava_h
+texture5 tib01_lava_i

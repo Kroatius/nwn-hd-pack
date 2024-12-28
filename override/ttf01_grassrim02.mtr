@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttf01_grassri2_d
+texture1 ttf01_grassri2_n
+texture2 ttf01_grassri2_s
+texture3 ttf01_grassri2_r
+texture4 ttf01_grassri2_h
+texture5 null

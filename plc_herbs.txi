@@ -1,3 +1,0 @@
-blending punchthrough
-alphamean 0.563
-filter 0

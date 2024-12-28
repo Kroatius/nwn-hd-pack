@@ -1,9 +1,0 @@
-renderhint NormalAndSpecMapped
- 
-// Textures 
-texture0 tdt01_rope01_d
-texture1 tdt01_rope01_n
-texture2 black
-texture3 tdt01_rope01_r
-texture4 tdt01_rope01_h
-texture5 null

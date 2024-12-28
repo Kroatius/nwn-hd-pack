@@ -1,9 +1,0 @@
-// Renderhint
-renderhint NormalAndSpecMapped
-
-// Textures
-texture0 MShSDLockA
-texture1 MShSDLockA-N
-texture2 MShSDLockA-S
-texture3 MShSDLockA-R
-texture4 MShSDLockA-B

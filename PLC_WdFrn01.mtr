@@ -1,7 +1,0 @@
-// Renderhint
-renderhint normalandspecmapped
-
-// Textures
-texture0 PLC_WdFrn01
-texture1 PLC_WdFrn01_n
-texture2 PLC_WdFrn01_s

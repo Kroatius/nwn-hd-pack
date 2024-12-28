@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tib_ground_d
+texture1 tib_ground_n
+texture2 black
+texture3 tib_ground_r
+texture4 tib_ground_h
+texture5 null

@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttu01_beetle2_d
+texture1 ttu01_beetle2_n
+texture2 black
+texture3 ttu01_beetle2_r
+texture4 ttu01_beetle2_h
+texture5 ttu01_beetle2_i

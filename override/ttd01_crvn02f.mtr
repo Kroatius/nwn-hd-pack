@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttd01_crvn02f_d
+texture1 ttd01_crvn02f_n
+texture2 ttd01_crvn02f_s
+texture3 ttd01_crvn02f_r
+texture4 ttd01_crvn02f_h
+texture5 null

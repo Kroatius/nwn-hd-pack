@@ -1,0 +1,10 @@
+ 
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 null
+texture1 pdag_prt1_n
+texture2 pdag_prt1_s
+texture3 null
+texture4 null
+texture5 pdag_prt1_i

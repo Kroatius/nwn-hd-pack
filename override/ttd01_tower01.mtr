@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttd01_tower01_d
+texture1 ttd01_tower01_n
+texture2 black
+texture3 ttd01_tower01_r
+texture4 ttd01_tower01_h
+texture5 null

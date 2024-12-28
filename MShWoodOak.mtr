@@ -1,7 +1,0 @@
-// Renderhint
-renderhint NormalAndSpecMapped
-
-// Textures
-texture0 mshwoodoak_d
-texture1 mshwoodoak_n
-texture2 mshwoodoak_s

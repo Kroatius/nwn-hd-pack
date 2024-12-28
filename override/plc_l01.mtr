@@ -1,0 +1,6 @@
+// Renderhint
+renderhint normalandspecmapped
+
+// Textures
+texture0 plc_l01
+texture1 plc_l01_n
