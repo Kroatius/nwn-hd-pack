@@ -1,0 +1,13 @@
+
+  
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tni01_wall1
+texture1 tni01_wall1_n
+texture2 null
+texture3 null
+texture4 null
+texture5 null
+
+
