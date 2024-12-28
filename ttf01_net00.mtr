@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttf01_net00_d
+texture1 ttf01_net00_n
+texture2 black
+texture3 ttf01_net00_r
+texture4 ttf01_net00_h
+texture5 null

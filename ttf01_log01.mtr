@@ -1,0 +1,10 @@
+ 
+renderhint NormalAndSpecMapped 
+ 
+// Textures 
+texture0 ttf01_log01_d 
+texture1 ttf01_log01_n 
+texture2 ttf01_log01_s 
+texture3 ttf01_log01_r 
+texture4 ttf01_log01_h 
+texture5 ttf01_log01_i 
