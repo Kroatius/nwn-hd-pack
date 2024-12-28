@@ -1,2 +1,0 @@
-268    Goat                           c_goat          2652        ****      4      
-269    Monkey                         c_monkey        2652        ****      4      
