@@ -1,0 +1,9 @@
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+ texture0 tic01_richwall_d
+ texture1 tic01_richwall_n
+ texture2 tic01_richwall_s
+ texture3 tic01_richwall_r
+ texture4 tic01_richwall_h
+ texture5 null
