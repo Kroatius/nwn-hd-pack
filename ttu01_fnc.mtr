@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttu01_fnc_d
+texture1 ttu01_fnc_n
+texture2 ttu01_fnc_s
+texture3 ttu01_fnc_r
+texture4 ttu01_fnc_h
+texture5 null

@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttu01_gliphs_d
+texture1 ttu01_gliphs_n
+texture2 ttu01_gliphs_s
+texture3 ttu01_gliphs_r
+texture4 ttu01_gliphs_h
+texture5 null

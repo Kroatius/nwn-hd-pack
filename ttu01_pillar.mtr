@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttu01_pillar_d
+texture1 ttu01_pillar_n
+texture2 ttu01_pillar_s
+texture3 ttu01_pillar_r
+texture4 ttu01_pillar_h
+texture5 null

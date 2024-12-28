@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttu01_crstllig_d
+texture1 ttu01_crstllig_n
+texture2 ttu01_crstllig_s
+texture3 ttu01_crstllig_r
+texture4 ttu01_crstllig_h
+texture5 null

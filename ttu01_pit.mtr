@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttu01_pit_d
+texture1 ttu01_pit_n
+texture2 black
+texture3 ttu01_pit_r
+texture4 ttu01_pit_h
+texture5 null

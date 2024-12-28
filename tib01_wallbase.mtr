@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tib01_wallbase_d
+texture1 tib01_wallbase_n
+texture2 black
+texture3 tib01_wallbase_r
+texture4 tib01_wallbase_h
+texture5 null

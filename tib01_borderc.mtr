@@ -1,0 +1,18 @@
+renderhint NormalAndSpecMapped
+
+customshadervs shd_roofkn_vs
+customshaderfs shd_roofkn_fs
+
+
+// Textures 
+texture0 tib01_border_d
+texture1 tib01_border_n
+texture2 black
+texture3 tib01_border_r
+texture4 tib01_border_h
+texture5 null
+
+parameter int iRoofInterior 0 
+parameter float fRoofOffsetZ 00.0
+parameter float fRoofCameraClipZ 5.0
+

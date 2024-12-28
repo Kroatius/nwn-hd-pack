@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttu01_grate_d
+texture1 ttu01_grate_n
+texture2 ttu01_grate_s
+texture3 ttu01_grate_r
+texture4 ttu01_grate_h
+texture5 null
