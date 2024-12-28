@@ -1,33 +1,33 @@
-# Exported from NWmax 0.8 b61 at 24/05/2023 23:12:04
+# Exported from NWmax 0.8 b61 at 24/05/2023 23:28:51
 # mdl file
 #
 #NWmax MODEL ASCII
-# model: c_pig
+# model: c_pigMukota
 #local file: C:\Users\Pablo\Documents\3DS\X.max
 filedependancy X.max
-newmodel c_pig
-setsupermodel c_pig porcine_a
+newmodel c_pigMukota
+setsupermodel c_pigMukota porcine_a
 classification Character
 setanimationscale 1.0
 #NWmax GEOM  ASCII
-beginmodelgeom c_pig
-node dummy c_pig
+beginmodelgeom c_pigMukota
+node dummy c_pigMukota
   parent NULL
 endnode
 node dummy handconjure
-  parent c_pig
+  parent c_pigMukota
   position 0.0 0.554816 0.473441
   orientation 1.0 0.0 0.0 0.0
   wirecolor 0.894118 0.6 0.721569 
 endnode
 node dummy headconjure
-  parent c_pig
+  parent c_pigMukota
   position 0.00789402 0.489114 0.67014
   orientation 1.0 0.0 0.0 0.0
   wirecolor 0.894118 0.6 0.721569 
 endnode
 node trimesh Wildboar_body
-  parent c_pig
+  parent c_pigMukota
   position 0.0 -0.372587 0.526495
   orientation 0.0 0.0 -1.0 -0.00154879
   wirecolor 0.894118 0.721569 0.6 
@@ -1600,7 +1600,7 @@ node trimesh Wildboar_Lfronthoof
     0.199296 0.842058 0
 endnode
 node skin Pig1
-  parent c_pig
+  parent c_pigMukota
   position 0.0 0.0 0.0
   orientation 0.0 0.0 1.0 -3.14159
   wirecolor 0.894118 0.6 0.721569 
@@ -1609,7 +1609,7 @@ node skin Pig1
   diffuse 1.0 1.0 1.0 
   specular 0.0 0.0 0.0 
   shininess 10.0
-  bitmap pig
+  bitmap pig_mukota
   verts 133
     -0.160925 -0.155633 0.421131
     -0.190406 -0.0831292 0.344749
@@ -2512,7 +2512,7 @@ node skin Pig1
      Wildboar_head 0.195488  Wildboar_body 0.303899  Wildboar_Lfronttopleg 0.5  Wildboar_LfrontbotlegA 0.00061314 
 endnode
 node skin Pig2
-  parent c_pig
+  parent c_pigMukota
   position 0.0 0.0 0.0
   orientation 0.0 0.0 1.0 -3.14159
   wirecolor 0.894118 0.6 0.721569 
@@ -2521,7 +2521,7 @@ node skin Pig2
   diffuse 1.0 1.0 1.0 
   specular 0.0 0.0 0.0 
   shininess 10.0
-  bitmap pig
+  bitmap pig_mukota
   verts 109
     0.0 0.821354 0.435667
     0.0 0.709048 0.523113
@@ -3123,5 +3123,5 @@ node skin Pig2
      Wildboar_body 0.5  Wildboar_Lbacktopleg 0.29212  Wildboar_Lrearbotleg 0.20788 
      Wildboar_tail 0.75  Wildboar_body 0.25 
 endnode
-endmodelgeom c_pig
-donemodel c_pig
+endmodelgeom c_pigMukota
+donemodel c_pigMukota
