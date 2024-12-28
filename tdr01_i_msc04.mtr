@@ -1,0 +1,13 @@
+
+  
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tdr01_i_msc04
+texture1 tdr01_i_msc04_n
+texture2 null
+texture3 null
+texture4 null
+texture5 null
+
+

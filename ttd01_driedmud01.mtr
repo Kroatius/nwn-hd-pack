@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttd01_driedmud_d
+texture1 ttd01_driedmud_n
+texture2 black
+texture3 ttd01_driedmud_r
+texture4 ttd01_driedmud_h
+texture5 null

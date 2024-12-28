@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 ttd01_barel_d
+texture1 ttd01_barel_n
+texture2 ttd01_barel_s
+texture3 ttd01_barel_r
+texture4 ttd01_barel_h
+texture5 null
