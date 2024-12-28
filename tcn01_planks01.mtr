@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tcn01_planks01_d
+texture1 tcn01_planks01_n
+texture2 tcn01_planks01_s
+texture3 tcn01_planks01_r
+texture4 tcn01_planks01_h
+texture5 null

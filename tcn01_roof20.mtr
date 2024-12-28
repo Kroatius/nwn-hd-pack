@@ -1,0 +1,10 @@
+ 
+renderhint NormalTangents 
+ 
+// Textures 
+texture0 tcn01_roof20_D 
+texture1 tcn01_roof20_N 
+texture2 tcn01_roof20_S 
+texture3 tcn01_roof20_R 
+texture4 tcn01_roof20_H 
+texture5 null 

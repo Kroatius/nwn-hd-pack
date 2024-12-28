@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tcn01_bridge_d
+texture1 tcn01_bridge_n
+texture2 black
+texture3 null
+texture4 tcn01_bridge_h
+texture5 null

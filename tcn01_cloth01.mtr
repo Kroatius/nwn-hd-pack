@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tcn01_cloth01_d
+texture1 tcn01_cloth01_n
+texture2 black
+texture3 tcn01_cloth01_r
+texture4 tcn01_cloth01_h
+texture5 null
