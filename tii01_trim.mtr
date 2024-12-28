@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tii01_trim_d
+texture1 tii01_trim_n
+texture2 tii01_trim_s
+texture3 tii01_trim_r
+texture4 tii01_trim_h
+texture5 null

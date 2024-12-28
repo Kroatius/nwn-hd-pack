@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tii01_brain_d
+texture1 tii01_brain_n
+texture2 black
+texture3 tii01_brain_r
+texture4 tii01_brain_h
+texture5 null

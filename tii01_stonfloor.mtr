@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tii01_stonfloo_d
+texture1 tii01_stonfloo_n
+texture2 black
+texture3 tii01_stonfloo_r
+texture4 tii01_stonfloo_h
+texture5 null

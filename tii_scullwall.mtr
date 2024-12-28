@@ -1,0 +1,10 @@
+
+renderhint NormalAndSpecMapped
+ 
+// Textures 
+texture0 tii_scullwall_d
+texture1 tii_scullwall_n
+texture2 tii_scullwall_s
+texture3 tii_scullwall_r
+texture4 tii_scullwall_h
+texture5 null
